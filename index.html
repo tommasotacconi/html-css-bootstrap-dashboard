@@ -56,199 +56,209 @@
   <main>
 
     <!-- Sezione catalogo libri -->
-    <section id="books-cat" class="py-4">
-      <div class="container">        
-        <!-- riga di titolo e bottone "aggiungi libro" -->
-        <div class="title-and-btn d-flex justify-content-between align-items-center">
-          <h1 class="mb-0">Titolo</h1>
-          <div class="btn btn-primary">Aggiungi libro</div>
+    <div class="container">
+      <div class="row row-cols-1">
+        <div class="col col-lg-9">          
+          <section id="books-cat" class="py-4">
+            <!-- riga di titolo e bottone "aggiungi libro" -->
+            <div class="title-and-btn d-flex justify-content-between align-items-center">
+              <h1 class="mb-0">Titolo</h1>
+              <div class="btn btn-primary">Aggiungi libro</div>
+            </div>
+            <!-- tabella con catalogo libri -->
+            <table class="table mt-4">
+              <!-- intestazioni tabella-->
+              <thead>
+                <tr>
+                  <th>Titolo</th>
+                  <th>Data prestito</th>
+                  <th>Stato</th>
+                  <th class="text-center">Azioni</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- riga tabella 1 -->
+                <tr>
+                  <td>I pilastri della terra</td>
+                  <td>data</td>
+                  <td><span class="badge text-bg-success">Disponibile</span></td>
+                  <td class="text-center">
+                    <div class="btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
+                    </div>
+                    <div class="btn btn-outline-secondary">
+                      <i class="fa-solid fa-trash"></i>
+                    </div>
+                  </td>
+                </tr>
+                <!-- riga tabella 2 -->
+                <tr>
+                  <td>I promessi sposi</td>
+                  <td>data</td>
+                  <td><span class="badge text-bg-success">Disponibile</span></td>
+                  <td class="text-center">
+                    <div class="btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
+                    </div>
+                    <div class="btn btn-outline-secondary">
+                      <i class="fa-solid fa-trash"></i>
+                    </div>
+                  </td>
+                </tr>
+                <!-- riga tabella 3 -->
+                <tr>
+                  <td>Il signore degli anelli</td>
+                  <td>data</td>
+                  <td><span class="badge text-bg-warning">In prestito</span></td>
+                  <td class="text-center">
+                    <div class="btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
+                    </div>
+                    <div class="btn btn-outline-secondary">
+                      <i class="fa-solid fa-trash"></i>
+                    </div>
+                  </td>
+                </tr>
+                <!-- riga tabella 4 -->
+                <tr>
+                  <td>Harry Potter e la pietra filosofale</td>
+                  <td>data</td>
+                  <td><span class="badge text-bg-success">Disponibile</span></td>
+                  <td class="text-center">
+                    <div class="btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
+                    </div>
+                    <div class="btn btn-outline-secondary">
+                      <i class="fa-solid fa-trash"></i>
+                    </div>
+                  </td>
+                </tr>
+                <!-- riga tabella 5 -->
+                <tr>
+                  <td>Il codice da Vinci</td>
+                  <td>data</td>
+                  <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                  <td class="text-center">
+                    <div class="btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
+                    </div>
+                    <div class="btn btn-outline-secondary">
+                      <i class="fa-solid fa-trash"></i>
+                    </div>
+                  </td>
+                </tr>
+                <!-- riga tabella 6 -->
+                <tr>
+                  <td>Shining</td>
+                  <td>data</td>
+                  <td><span class="badge text-bg-success">Disponibile</span></td>
+                  <td class="text-center">
+                    <div class="btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
+                    </div>
+                    <div class="btn btn-outline-secondary">
+                      <i class="fa-solid fa-trash"></i>
+                    </div>
+                  </td>
+                </tr>
+                <!-- riga tabella 7 -->
+                <tr>
+                  <td>La Divina Commedia</td>
+                  <td>data</td>
+                  <td><span class="badge text-bg-success">Disponibile</span></td>
+                  <td class="text-center">
+                    <div class="btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
+                    </div>
+                    <div class="btn btn-outline-secondary">
+                      <i class="fa-solid fa-trash"></i>
+                    </div>
+                  </td>
+                </tr>
+                <!-- riga tabella 8 -->
+                <tr>
+                  <td>Il trono di spade</td>
+                  <td>data</td>
+                  <td><span class="badge text-bg-success">Disponibile</span></td>
+                  <td class="text-center">
+                    <div class="btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
+                    </div>
+                    <div class="btn btn-outline-secondary">
+                      <i class="fa-solid fa-trash"></i>
+                    </div>
+                  </td>
+                </tr>
+                <!-- riga tabella 9 -->
+                <tr>
+                  <td>Il mondo di Sofia</td>
+                  <td>data</td>
+                  <td><span class="badge text-bg-success">Disponibile</span></td>
+                  <td class="text-center">
+                    <div class="btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
+                    </div>
+                    <div class="btn btn-outline-secondary">
+                      <i class="fa-solid fa-trash"></i>
+                    </div>
+                  </td>
+                </tr>
+                <!-- riga tabella 10 -->
+                <tr>
+                  <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                  <td>data</td>
+                  <td><span class="badge text-bg-success">Disponibile</span></td>
+                  <td class="text-center">
+                    <div class="btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
+                    </div>
+                    <div class="btn btn-outline-secondary">
+                      <i class="fa-solid fa-trash"></i>
+                    </div>
+                  </td>
+                </tr>
+                <!-- riga tabella 11 -->
+                <tr>
+                  <td>Il piccolo principe</td>
+                  <td>data</td>
+                  <td><span class="badge text-bg-success">Disponibile</span></td>
+                  <td class="text-center">
+                    <div class="btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
+                    </div>
+                    <div class="btn btn-outline-secondary">
+                      <i class="fa-solid fa-trash"></i>
+                    </div>
+                  </td>
+                </tr>
+                <!-- riga tabella 12 -->
+                <tr>
+                  <td>La storia infinita</td>
+                  <td>data</td>
+                  <td><span class="badge text-bg-success">Disponibile</span></td>
+                  <td class="text-center">
+                    <div class="btn btn-outline-secondary">
+                      <i class="bi bi-pencil-fill"></i>
+                    </div>
+                    <div class="btn btn-outline-secondary">
+                      <i class="fa-solid fa-trash"></i>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
         </div>
-        <!-- tabella con catalogo libri -->
-        <table class="table mt-4">
-          <!-- intestazioni tabella-->
-          <thead>
-            <tr>
-              <th>Titolo</th>
-              <th>Data prestito</th>
-              <th>Stato</th>
-              <th class="text-center">Azioni</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- riga tabella 1 -->
-            <tr>
-              <td>I pilastri della terra</td>
-              <td>data</td>
-              <td><span class="badge text-bg-success">Disponibile</span></td>
-              <td class="text-center">
-                <div class="btn btn-outline-secondary">
-                  <i class="bi bi-pencil-fill"></i>
-                </div>
-                <div class="btn btn-outline-secondary">
-                  <i class="fa-solid fa-trash"></i>
-                </div>
-              </td>
-            </tr>
-            <!-- riga tabella 2 -->
-            <tr>
-              <td>I promessi sposi</td>
-              <td>data</td>
-              <td><span class="badge text-bg-success">Disponibile</span></td>
-              <td class="text-center">
-                <div class="btn btn-outline-secondary">
-                  <i class="bi bi-pencil-fill"></i>
-                </div>
-                <div class="btn btn-outline-secondary">
-                  <i class="fa-solid fa-trash"></i>
-                </div>
-              </td>
-            </tr>
-            <!-- riga tabella 3 -->
-            <tr>
-              <td>Il signore degli anelli</td>
-              <td>data</td>
-              <td><span class="badge text-bg-warning">In prestito</span></td>
-              <td class="text-center">
-                <div class="btn btn-outline-secondary">
-                  <i class="bi bi-pencil-fill"></i>
-                </div>
-                <div class="btn btn-outline-secondary">
-                  <i class="fa-solid fa-trash"></i>
-                </div>
-              </td>
-            </tr>
-            <!-- riga tabella 4 -->
-            <tr>
-              <td>Harry Potter e la pietra filosofale</td>
-              <td>data</td>
-              <td><span class="badge text-bg-success">Disponibile</span></td>
-              <td class="text-center">
-                <div class="btn btn-outline-secondary">
-                  <i class="bi bi-pencil-fill"></i>
-                </div>
-                <div class="btn btn-outline-secondary">
-                  <i class="fa-solid fa-trash"></i>
-                </div>
-              </td>
-            </tr>
-            <!-- riga tabella 5 -->
-            <tr>
-              <td>Il codice da Vinci</td>
-              <td>data</td>
-              <td><span class="badge text-bg-danger">Non disponibile</span></td>
-              <td class="text-center">
-                <div class="btn btn-outline-secondary">
-                  <i class="bi bi-pencil-fill"></i>
-                </div>
-                <div class="btn btn-outline-secondary">
-                  <i class="fa-solid fa-trash"></i>
-                </div>
-              </td>
-            </tr>
-            <!-- riga tabella 6 -->
-            <tr>
-              <td>Shining</td>
-              <td>data</td>
-              <td><span class="badge text-bg-success">Disponibile</span></td>
-              <td class="text-center">
-                <div class="btn btn-outline-secondary">
-                  <i class="bi bi-pencil-fill"></i>
-                </div>
-                <div class="btn btn-outline-secondary">
-                  <i class="fa-solid fa-trash"></i>
-                </div>
-              </td>
-            </tr>
-            <!-- riga tabella 7 -->
-            <tr>
-              <td>La Divina Commedia</td>
-              <td>data</td>
-              <td><span class="badge text-bg-success">Disponibile</span></td>
-              <td class="text-center">
-                <div class="btn btn-outline-secondary">
-                  <i class="bi bi-pencil-fill"></i>
-                </div>
-                <div class="btn btn-outline-secondary">
-                  <i class="fa-solid fa-trash"></i>
-                </div>
-              </td>
-            </tr>
-            <!-- riga tabella 8 -->
-            <tr>
-              <td>Il trono di spade</td>
-              <td>data</td>
-              <td><span class="badge text-bg-success">Disponibile</span></td>
-              <td class="text-center">
-                <div class="btn btn-outline-secondary">
-                  <i class="bi bi-pencil-fill"></i>
-                </div>
-                <div class="btn btn-outline-secondary">
-                  <i class="fa-solid fa-trash"></i>
-                </div>
-              </td>
-            </tr>
-            <!-- riga tabella 9 -->
-            <tr>
-              <td>Il mondo di Sofia</td>
-              <td>data</td>
-              <td><span class="badge text-bg-success">Disponibile</span></td>
-              <td class="text-center">
-                <div class="btn btn-outline-secondary">
-                  <i class="bi bi-pencil-fill"></i>
-                </div>
-                <div class="btn btn-outline-secondary">
-                  <i class="fa-solid fa-trash"></i>
-                </div>
-              </td>
-            </tr>
-            <!-- riga tabella 10 -->
-            <tr>
-              <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
-              <td>data</td>
-              <td><span class="badge text-bg-success">Disponibile</span></td>
-              <td class="text-center">
-                <div class="btn btn-outline-secondary">
-                  <i class="bi bi-pencil-fill"></i>
-                </div>
-                <div class="btn btn-outline-secondary">
-                  <i class="fa-solid fa-trash"></i>
-                </div>
-              </td>
-            </tr>
-            <!-- riga tabella 11 -->
-            <tr>
-              <td>Il piccolo principe</td>
-              <td>data</td>
-              <td><span class="badge text-bg-success">Disponibile</span></td>
-              <td class="text-center">
-                <div class="btn btn-outline-secondary">
-                  <i class="bi bi-pencil-fill"></i>
-                </div>
-                <div class="btn btn-outline-secondary">
-                  <i class="fa-solid fa-trash"></i>
-                </div>
-              </td>
-            </tr>
-            <!-- riga tabella 12 -->
-            <tr>
-              <td>La storia infinita</td>
-              <td>data</td>
-              <td><span class="badge text-bg-success">Disponibile</span></td>
-              <td class="text-center">
-                <div class="btn btn-outline-secondary">
-                  <i class="bi bi-pencil-fill"></i>
-                </div>
-                <div class="btn btn-outline-secondary">
-                  <i class="fa-solid fa-trash"></i>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="col col-lg-3 pt-4">
+          <section id="user-support">
+            <div class="card dashed-border-alternative" id="todo"></div>
+            <div class="card dashed-border-alternative" id="faq"></div>          
+          </section>
+        </div>
+      </div>        
+    </div>
 
-        <span class="badge badge-pill badge-success">Success</span>
-      </div>
-    </section>
+
   </main>
 
 <!-- javascript -->
