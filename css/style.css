@@ -78,9 +78,15 @@ table td:nth-child(2) {
     display: none;
 }
 
+table .badge.text-bg-warning {
+    color: #fff !important;
+}
+
+
 /* RESPONSIVE */
 /* for lg dimension of window */
 @media screen and (min-width: 992px) {
+    /* in books-cat */
     table th:nth-child(2),
     table td:nth-child(2) {
         display: table-cell;
