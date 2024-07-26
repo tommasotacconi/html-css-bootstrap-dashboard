@@ -67,3 +67,22 @@ body {
 
 /* Utilities */
 /* in navbar */
+
+/* in books-cat  */
+table th:last-child {
+    width: 120px;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+    display: none;
+}
+
+/* RESPONSIVE */
+/* for lg dimension of window */
+@media screen and (min-width: 992px) {
+    table th:nth-child(2),
+    table td:nth-child(2) {
+        display: table-cell;
+    }     
+}
