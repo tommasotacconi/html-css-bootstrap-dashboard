@@ -53,6 +53,88 @@
     </nav>
   </header>
 
+  <!-- Form di prenotazione di libro -->
+  <form action="" id="book-reser">
+    <div class="container">      
+      
+      <h1 class="fs-3 py-3">Nuovo libro</h1>
+      <!-- Info libro -->
+      <div id="info-libro" class="row gy-3">
+        <div class="col-6">
+          <!-- nome autore -->
+          <div class="label">
+            <span class="d-inline-block mb-2">Nome autore</span><br>            
+            <input type="text" class="form-control" placeholder="Inserisci il nome dell'autore"
+              aria-label="First name">            
+          </div>
+        </div>
+        <div class="col-6">
+          <!-- cognome autore -->
+          <div class="label">
+            <span class="d-inline-block mb-2">Cognome autore</span><br>
+            <input type="text" class="form-control" placeholder="Inserisci il cognome dell'autore"
+              aria-label="Last name">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="label">
+            <!-- titolo -->
+            <span class="d-inline-block mb-2">Titolo</span><br>
+            <input type="text" class="form-control" placeholder="Inserisci il titolo del libro"
+              aria-label="Last name">
+            <span class="nota-form">Titolo versione italiana</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="label">
+            <!-- genere -->
+            <span class="d-inline-block mb-2">Cognome autore</span><br>
+            <select class="form-select" placeholder="Scegli il genere" aria-label="genre">
+              <option value="" selected disabled>scegli il genere</option>
+              <option value="romance">romanzo</option>
+              <option value="sci-fic">fantascenza</option>
+              <option value="bio">biografia</option>
+              <option value="thri">thriller</option>
+              <option value="adv-act">avventura e azione</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="label">
+            <!-- anno di pubblicazione -->
+            <span class="d-inline-block mb-2">Anno di pubblicazione</span><br>
+            <input type="date" class="form-control" placeholder="Inserisci l'anno" aria-label="Last name">
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="label">
+            <!-- numero isbn -->
+            <span class="d-inline-block mb-2">ISBN</span><br>
+            <input type="text" class="form-control" placeholder="inserisci il codice ISBN#" aria-label="Last name">
+          </div>
+        </div>
+      </div>
+      <!-- separazione grafica con linea orizzontale -->
+      <div class="separator-div"></div>
+      <!-- box note -->
+      <div class="row">
+        <div class="col-12">
+          <div class="label">
+            <span class="d-inline-block mb-2">Note</span><br>
+            <textarea name="note" id="note" class="form-control w-100"></textarea>
+          </div>
+        </div>
+      </div>
+      <!-- checkbox per deposito in digitale -->
+      <div class="label mt-3">
+        <input type="checkbox" id="">
+        <span>Disponibile anche in digitale</span>
+      </div>
+      <!-- button aggiungi libro -->
+      <button class="btn btn-primary mt-3 ">Aggiungi libro</button>
+    </div>
+  </form>
+
     <!-- javascript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

@@ -85,6 +85,16 @@ table .badge.text-bg-warning {
     color: #fff !important;
 }
 
+/* in new-book.html */
+form#book-reser textarea {
+    height: 100px;
+    resize: none;
+}
+
+.nota-form {
+    color: #888;
+}
+
 
 
 
