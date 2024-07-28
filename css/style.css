@@ -92,11 +92,28 @@ form#book-reser textarea {
 }
 
 .nota-form {
+    font-size: 0.9rem;
     color: #888;
 }
 
+#note-box {
+    position: relative;
+}
 
+#note-box::before {
+    content: '';
+    position: absolute;
+    top: -1.4rem;
+    left: 12px;
+    width: calc(100% - 12px * 2);
+    border: 1px solid lightgray;
+}
 
+input.form-control,
+select.form-select,
+textarea.form-control {
+    border-width: 1.5px;
+}
 
 /* RESPONSIVE */
 /* for lg dimension of window */
