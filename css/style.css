@@ -71,6 +71,10 @@ body {
     box-shadow: 0 0 0 1px;
 }
 
+.navbar-brand img {
+    height: 60px;
+}
+
 /* in books-cat  */
 table th:last-child {
     width: 120px;
